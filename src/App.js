@@ -1,4 +1,4 @@
-import placeholder from './images/place-holder.jpg';
+import placeholder from './images/back-of-card.jpg';
 import {
   BrowserRouter as Router,
   Switch,
