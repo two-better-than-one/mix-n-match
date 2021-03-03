@@ -1,6 +1,7 @@
 .App {
   text-align: center;
   font-family: 'Quicksand', sans-serif;
+
 }
 
 p{
@@ -19,6 +20,7 @@ p{
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
 
 .App-header {
   background-color: #282c34;
