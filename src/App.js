@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+// import wood from './images/backgrounds/back-wood.jpg';
 import './App.css';
 
 function App() {
@@ -8,16 +9,10 @@ function App() {
       <p>
           Mix n Match
         </p>
+        {/* <img src={wood} alt=""/> */}
         <img src={logo} className="App-logo" alt="logo" />
-{/* 
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a> */}
+
+
       </header>
     </div>
   );
