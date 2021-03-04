@@ -1,4 +1,4 @@
-import placeholder from './images/place-holder.jpg';
+import backofcard from './images/backgrounds/back-of-card.jpg';
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <p> Mix n Match  </p>
-        <img src={placeholder} className="App-logo" alt="logo" />
+        <img src={backofcard} className="App-logo" alt="logo" />
 
       <Router>
       <div>
