@@ -1,4 +1,4 @@
-import placeholder from './images/place-holder.jpg';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -6,30 +6,38 @@ import {
   Link
 } from "react-router-dom";
 
+import Tutorial from './pages/tutorial';
 import SelectDifficulty from './pages/select-difficulty';
+import Leaderboard from './pages/leaderboard';
 import Credits from './pages/credits';
+
 
 import './App.css';
 
 function App() {
   return (
     
-
-
+    // Landing page
     <div className="App">
-      <header className="App-header">
-        <p> Mix n Match  </p>
-        <img src={placeholder} className="App-logo" alt="logo" />
-
+      
       <Router>
-      <div>
+      <div className='center'>
+        <h1>Mix N Match</h1>
+
         <nav>
           <ul>
             <li>
-              <Link to="/">Home</Link>
+              <Link to="/tutorial">Tutorial</Link>
             </li>
             <li>
-              <Link to="/selectdifficulty">Select Difficulty</Link>
+              <Link to="/selectdifficulty">Start</Link>
+            </li>
+            
+          </ul>
+
+          <ul>
+            <li>
+              <Link to="/leaderboard">Leaderboard</Link>
             </li>
             <li>
               <Link to="/credits">Credits</Link>
@@ -40,35 +48,25 @@ function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
+          <Route path="/tutorial">
+            <Tutorial />
+          </Route>
           <Route path="/selectdifficulty">
             <SelectDifficulty />
+          </Route>
+          <Route path="/leaderboard">
+            <Leaderboard />
           </Route>
           <Route path="/credits">
             <Credits />
           </Route>
-          <Route path="/">
-            <Home />
-          </Route>
         </Switch>
       </div>
     </Router>
-
-
-      </header>
-    </div>
+  </div>
+    
   );
 }
-
-
-
-function Home() {
-  return (
-    <div>
-      <h2>Home</h2>
-    </div>
-  );
-}
-
 
 
 export default App;
