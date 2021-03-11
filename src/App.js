@@ -16,11 +16,11 @@ import './App.css';
 
 function App() {
   return (
-    
+
     // Landing page
     <div className="App">
-      
-      <Router>
+
+    <Router>
       <div className='center'>
         <h1>Mix N Match</h1>
 
@@ -32,7 +32,7 @@ function App() {
             <li>
               <Link to="/selectdifficulty">Start</Link>
             </li>
-            
+
           </ul>
 
           <ul>
@@ -64,7 +64,7 @@ function App() {
       </div>
     </Router>
   </div>
-    
+
   );
 }
 

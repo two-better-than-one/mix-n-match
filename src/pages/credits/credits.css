@@ -1,3 +1,93 @@
-.creditsContainer{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.pictures{
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  grid-auto-rows: minmax(40px, auto);
   border: 2px solid green;
+  margin-top: 2.5%;
+  padding-top: 2.5%;
+  justify-items: center;
+}
+
+img{
+  margin-bottom: 5%;
+}
+
+p{
+  text-align: center;
+}
+
+.title{
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.makers{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.shad{
+  grid-column: 2;
+}
+
+.marino{
+  grid-column: 3;
+}
+
+.s-portfolio{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.s-linked{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.s-github{
+  grid-column: 2;
+  grid-row: 4;
+}
+
+p a{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.m-portfolio{
+  grid-column: 3;
+  grid-row: 2;
+}
+
+.m-linked{
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.m-github{
+  grid-column: 3;
+  grid-row: 4;
+}
+
+.options{
+  display: grid;
+  grid-template-rows: repeat(6, 16.5%);
+}
+
+.menu{
+  grid-row: 2;
+}
+
+.play{
+  grid-row: 4;
+}
+
+.board{
+  grid-row: 6;
 }
