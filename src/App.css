@@ -13,7 +13,8 @@ html, body{
   background-image: url(./images/backgrounds/back-wood.jpg);
   background-position: center; 
   background-size: cover;
-  padding: 80px
+  padding: 80px;
+  height: 100%;
 }
 
 .center {
@@ -21,6 +22,7 @@ html, body{
   width: 800px;
   height:860px;
   margin: auto;
+  overflow: auto;
 }
 
 h1{
@@ -44,4 +46,5 @@ ul{
 a{
   text-decoration: none;
   font-size: 32px; 
+  line-height: 2;
 }

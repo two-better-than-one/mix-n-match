@@ -11,3 +11,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* used to make sure the app covers the whole page */
+#root{
+  height: 100%;
+}
