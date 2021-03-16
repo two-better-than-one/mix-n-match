@@ -1,4 +1,8 @@
 
+
+=======
+import backofcard from './images/backgrounds/back-of-card.jpg';
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -19,7 +23,13 @@ function App() {
     
     // Landing page
     <div className="App">
-      
+
+
+      <header className="App-header">
+        <p> Mix n Match  </p>
+        <img src={backofcard} className="App-logo" alt="logo" />
+
+
       <Router>
       <div className='center'>
         <h1>Mix N Match</h1>
