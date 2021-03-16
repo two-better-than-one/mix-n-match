@@ -13,7 +13,7 @@ function Credits() {
         <img src={shad} width='150' alt='Shad Lee' title='Shad Lee' className='shad'></img>
         <img src={marino} width='150' alt='Mariño Carranza' title='Mariño Carranza' className='marino'></img>
 
-        <p className='s-portfolio'><a href='#'>Portfolio</a></p>
+        <p className='s-portfolio'><a href='https://sl8305.github.io/efficient-portfolio/'>Portfolio</a></p>
         <p className='s-linked'><a href='https://www.linkedin.com/in/shad-lee/'>LinkedIn</a></p>
         <p className='s-github'><a href='https://github.com/sl8305'>GitHub</a></p>
 
@@ -22,9 +22,9 @@ function Credits() {
         <p className='m-github'><a href='https://github.com/PMCarranza'>GitHub</a></p>
 
         <div className='nested'>
-          <p className='menu'><a href='../leaderboard/index.js'>Menu</a></p>
-          <p className='play'><a href='../select-difficulty/index.js'>Play a Game</a></p>
-          <p className='board'><a href='../leaderboard/index.js'>Leaderboard</a></p>
+          <p className='menu'><a href='/src/App.js'>Menu</a></p>
+          <p className='play'><a href='../selectdifficulty'>Play a Game</a></p>
+          <p className='board'><a href='../leaderboard'>Leaderboard</a></p>
         </div>
 
     </div>
