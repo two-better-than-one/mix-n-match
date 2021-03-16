@@ -1,7 +1,8 @@
+import './select-difficulty.css';
 
 function SelectDifficulty() {
     return (
-      <div>
+      <div className='selectLevelContainer'>
         <h2>Choose your level</h2>
       </div>
     );

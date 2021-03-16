@@ -1,7 +1,8 @@
+import './credits.css';
 
 function Credits() {
     return (
-      <div>
+      <div className='creditsContainer'>
         <h2>Credits</h2>
       </div>
     );

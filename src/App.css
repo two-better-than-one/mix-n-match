@@ -1,41 +1,50 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+}
+
 .App {
-  text-align: center;
   font-family: 'Quicksand', sans-serif;
-
+  background-image: url(./images/backgrounds/back-wood.jpg);
+  background-position: center; 
+  background-size: cover;
+  padding: 80px;
+  height: 100%;
 }
 
-p{
-  font-size: 4vw;
+.center {
+  background-color: white;
+  width: 800px;
+  height:860px;
+  margin: auto;
+  overflow: auto;
+}
+
+h1{
+  text-align: center;
   font-weight: bold;
-
+  font-size: 64px;
+  padding: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav{
+  display: block;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul{
+  list-style-type: none;
+  margin: 40px auto;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: white;
+  justify-content: space-around;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a{
+  text-decoration: none;
+  font-size: 32px; 
+  line-height: 2;
 }
