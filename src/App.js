@@ -1,6 +1,5 @@
 
 
-=======
 import backofcard from './images/backgrounds/back-of-card.jpg';
 
 import {
