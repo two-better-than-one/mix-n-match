@@ -1,7 +1,4 @@
 
-
-import backofcard from './images/backgrounds/back-of-card.jpg';
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -14,19 +11,14 @@ import SelectDifficulty from './pages/select-difficulty';
 import Leaderboard from './pages/leaderboard';
 import Credits from './pages/credits';
 
-
 import './App.css';
 
 function App() {
   return (
-    
+  
+
     // Landing page
     <div className="App">
-
-
-      <header className="App-header">
-        <p> Mix n Match  </p>
-        <img src={backofcard} className="App-logo" alt="logo" />
 
 
       <Router>
