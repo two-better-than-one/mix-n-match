@@ -11,7 +11,6 @@ import SelectDifficulty from './pages/select-difficulty';
 import Leaderboard from './pages/leaderboard';
 import Credits from './pages/credits';
 
-
 import './App.css';
 
 function App() {
