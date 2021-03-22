@@ -6,6 +6,8 @@ import {
   Link
 } from "react-router-dom";
 
+import React, { useState } from 'react';
+
 import Tutorial from './pages/tutorial';
 import SelectDifficulty from './pages/select-difficulty';
 import Leaderboard from './pages/leaderboard';
@@ -14,6 +16,15 @@ import Credits from './pages/credits';
 import './App.css';
 
 function App() {
+
+  const [isHidden, toggleHidden] = useState(false);
+
+  const toggle = (e) => {
+    // e.preventDefault();
+    console.log('toggled');
+    toggleHidden(!isHidden);
+  };
+
   return (
   
 
@@ -25,49 +36,38 @@ function App() {
       <div className='center'>
         <h1>Mix N Match</h1>
 
-        <nav>
-          <ul>
-            <li>
-              <Link to="/tutorial">Tutorial</Link>
+        <nav className={isHidden ? "hidden" : ""}>
+          <ul  className={isHidden ? "hidden" : ""}>
+            <li  className={isHidden ? "hidden" : ""}>
+              <Link to="/tutorial" className={isHidden ? "hidden" : ""} onClick={toggle}>Tutorial</Link>
             </li>
             <li>
-              <Link to="/selectdifficulty">Start</Link>
+              <Link to="/selectdifficulty" onClick={toggle}>Start</Link>
             </li>
-            
           </ul>
 
           <ul>
             <li>
-              <Link to="/leaderboard">Leaderboard</Link>
+              <Link to="/leaderboard" onClick={toggle}>Leaderboard</Link>
             </li>
             <li>
-              <Link to="/credits">Credits</Link>
+              <Link to="/credits" onClick={toggle}>Credits</Link>
             </li>
           </ul>
         </nav>
 
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/tutorial">
-            <Tutorial />
-          </Route>
-          <Route path="/selectdifficulty">
-            <SelectDifficulty />
-          </Route>
-          <Route path="/leaderboard">
-            <Leaderboard />
-          </Route>
-          <Route path="/credits">
-            <Credits />
-          </Route>
+          <Route path="/tutorial" component={Tutorial} />
+          <Route path="/selectdifficulty" component={SelectDifficulty} />
+          <Route path="/leaderboard" component={Leaderboard} />
+          <Route path="/credits" component={Credits} />
         </Switch>
+        
       </div>
     </Router>
   </div>
     
   );
 }
-
 
 export default App;

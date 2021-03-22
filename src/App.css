@@ -19,8 +19,8 @@ html, body{
 
 .center {
   background-color: white;
-  width: 800px;
-  height:860px;
+  width: 900px;
+  height:960px;
   margin: auto;
   overflow: auto;
 }
@@ -47,4 +47,14 @@ a{
   text-decoration: none;
   font-size: 32px; 
   line-height: 2;
+}
+
+.hidden {
+  /* background-color: blue; */
+  font-size: 0px;
+  height: 0px;
+}
+
+.show {
+  background-color: green;
 }

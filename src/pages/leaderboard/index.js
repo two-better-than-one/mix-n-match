@@ -14,8 +14,9 @@ function Leaderboard() {
     <div className='leaderboardContainer'>
       
       <div className='chart'>
-        <h2>Top Scores!</h2>
-
+        <div className='topScore'>
+          <h2>Top Scores!</h2>
+        </div>
       </div>
 
       <div className='leaderboardOptions'>    
