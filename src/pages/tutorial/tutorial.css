@@ -1,3 +1,116 @@
-.tutorialContainer{
-    border: 2px solid blue;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+body{
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
+
+.tutorial-container{
+  max-width: 100%;
+  font-size: 18px;
+  background-color: rgba(141, 144, 147, 0.5);
+  border-radius: 2.5em;
+}
+
+.title{
+  font-size: 2em;
+  font-weight: bold;
+  padding: 2% 0;
+}
+
+.tutorial-body{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.first-row{
+  width: 60%;
+  display: flex;
+  justify-content: space-evenly;
+  /* flex-direction: row; */
+  flex-wrap: wrap;
+}
+
+/* .second-row{
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+} */
+
+.t-card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 125px;
+  margin: 0 2% 10% 2%;
+}
+
+.t-card {
+  height: 125%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease-in-out;
+  width: 110%;
+}
+
+.t-card:hover {
+  transform: rotateY(180deg);
+}
+
+.t-card .side {
+  backface-visibility: hidden;
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.t-card .back {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(141, 144, 147, 0.5);
+  color:whitesmoke;
+  transform: rotateY(180deg);
+  box-shadow: 6px 6px rgb(141, 144, 147);
+}
+
+.t-instructions{
+  width: 15%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(141, 144, 147, 0.5);
+}
+
+.t-instructions > p{
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+.t-options{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.t-play{
+  width: 80%;
+  margin: 5% 0;
+}
+
+.t-board{
+  width: 80%;
+  margin: 5% 0;
+}
+
+.t-credits{
+  width: 80%;
+  margin: 5% 0;
+}
+
