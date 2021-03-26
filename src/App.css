@@ -18,11 +18,11 @@ html, body{
 }
 
 .center {
-  background-color: white;
-  width: 900px;
-  height:960px;
+  /* background-color: white; */
+  max-width: 90%;
+  /* height:860px; */
   margin: auto;
-  overflow: auto;
+  /* overflow: auto; */
 }
 
 h1{
@@ -44,6 +44,7 @@ ul{
 }
 
 a{
+  color: whitesmoke;
   text-decoration: none;
   font-size: 32px; 
   line-height: 2;

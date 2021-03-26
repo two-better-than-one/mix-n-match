@@ -1,3 +1,178 @@
-.creditsContainer{
-  border: 2px solid green;
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+.container{
+  font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  max-width: 100%;
+  justify-items: center;
+  background-color: rgba(141, 144, 147, 0.5);
+  border-radius: 2.5em;
+}
+
+p{
+  text-align: center;
+}
+
+.title{
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.sub-title{
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.main-body{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+img{
+  box-shadow: 6px 6px rgb(141, 144, 147);
+}
+
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+  position: relative;
+  width: 150px;
+  margin-bottom: 80%;
+}
+
+.card {
+  height: 150%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1.5s ease-in-out;
+  width: 120%;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+}
+
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 8px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+
+.card .back {
+  font-size: 16px;
+  font-weight: bold;
+  background-color: rgba(141, 144, 147, 0.5);
+  color:whitesmoke;
+  line-height: 25px;
+  text-align: center;
+  transform: rotateY(180deg);
+  box-shadow: 6px 6px rgb(141, 144, 147);
+}
+
+.shad-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.s-portfolio{
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.s-linked{
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.s-github{
+  width: 100%;
+  margin-left: 10%;
+}
+
+.marino-links{
+  display: flex;
+  flex-direction: column;
+}
+
+.m-portfolio{
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.m-linked{
+  width: 100%;
+  margin-left: 10%;
+  margin-bottom: 10%;
+}
+
+.m-github{
+  width: 100%;
+  margin-left: 10%;
+}
+
+p a{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.options{
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+button{
+  background-color: dodgerblue;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 4px 4px black;
+}
+
+button:hover{
+  background-color: black;
+  border-radius: 2em;
+  border: none;
+  box-shadow: 2px 2px dodgerblue;
+
+}
+
+button > a{
+  font-size: 18px;
+  color: whitesmoke;
+  font-weight: bold;
+}
+
+button > a:hover{
+  color: dodgerblue;
+}
+
+.menu{
+  padding: 2.5% 0;
+  margin: 5% 0;
+}
+
+.play{
+  padding: 2.5% 0;
+  margin: 5% 0;
+}
+
+.board{
+  padding: 2.5% 0;
+  margin: 5% 0;
+}
+
+.empty{
+  height: 40px;
 }
