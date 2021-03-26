@@ -1,3 +1,4 @@
+
 import './leaderboard.css';
 import {
   Switch,
@@ -7,9 +8,10 @@ import {
 
 import SelectDifficulty from '../select-difficulty';
 import Credits from '../credits';
-
+import toggle from '../../App';
 
 function Leaderboard() {
+
   return (
     <div className='leaderboardContainer'>
       
@@ -22,25 +24,20 @@ function Leaderboard() {
       <div className='leaderboardOptions'>    
         <ul>
           <li>
-            <Link to={`/`}>Main Menu</Link>
+            <Link to={`/`}  onClick={toggle}>Main Menu</Link>
           </li>
           <li>
-            <Link to={`/selectdifficulty`}>Play a game</Link>
+            <Link to={`/selectdifficulty`}  onClick={toggle}>Play a game</Link>
           </li>
           <li>
-            <Link to={`/credits`}>Credits</Link>
+            <Link to={`/credits`}  onClick={toggle}>Credits</Link>
           </li>
         </ul>
 
       <Switch>
-        <Route exact path="/">
-        </Route>
-        <Route path="/selectdifficulty">
-          <SelectDifficulty />
-        </Route>
-        <Route path="/credits">
-          <Credits />
-        </Route>
+        <Route exact path="/"/>
+        <Route path="/selectdifficulty" component={SelectDifficulty}/>
+        <Route path="/credits" component={Credits} />
       </Switch>
 
       </div>

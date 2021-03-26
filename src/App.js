@@ -1,12 +1,11 @@
 
+import React, { Component } from "react";
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
-
-import React, { useState } from 'react';
 
 import Tutorial from './pages/tutorial';
 import SelectDifficulty from './pages/select-difficulty';
@@ -15,14 +14,19 @@ import Credits from './pages/credits';
 
 import './App.css';
 
-function App() {
 
-  const [isHidden, toggleHidden] = useState(false);
+class App extends Component {
 
-  const toggle = (e) => {
-    // e.preventDefault();
-    console.log('toggled');
-    toggleHidden(!isHidden);
+  constructor(props) {
+    super(props);
+    // toggle for hidding the first options
+    this.state = {isHidden: false};
+  }
+
+  render () {
+
+  var toggle = (e) => {
+    this.setState(({ isHidden }) => ({ isHidden: !isHidden }));
   };
 
   return (
@@ -36,22 +40,42 @@ function App() {
       <div className='center'>
         <h1>Mix N Match</h1>
 
-        <nav className={isHidden ? "hidden" : ""}>
-          <ul  className={isHidden ? "hidden" : ""}>
-            <li  className={isHidden ? "hidden" : ""}>
-              <Link to="/tutorial" className={isHidden ? "hidden" : ""} onClick={toggle}>Tutorial</Link>
+        <nav className={this.state.isHidden ? "hidden" : ""}>
+          <ul  className={this.state.isHidden ? "hidden" : ""}>
+            <li  className={this.state.isHidden ? "hidden" : ""}>
+              <Link 
+                to="/tutorial" 
+                className={this.state.isHidden ? "hidden" : ""} 
+                onClick={toggle}>
+                  Tutorial
+              </Link>
             </li>
             <li>
-              <Link to="/selectdifficulty" onClick={toggle}>Start</Link>
+              <Link 
+                to="/selectdifficulty" 
+                className={this.state.isHidden ? "hidden" : ""} 
+                onClick={toggle}>
+                  Start
+              </Link>
             </li>
           </ul>
 
           <ul>
             <li>
-              <Link to="/leaderboard" onClick={toggle}>Leaderboard</Link>
+              <Link
+                to="/leaderboard" 
+                className={this.state.isHidden ? "hidden" : ""} 
+                onClick={toggle} >
+                  Leaderboard
+              </Link>
             </li>
             <li>
-              <Link to="/credits" onClick={toggle}>Credits</Link>
+              <Link 
+                to="/credits"
+                className={this.state.isHidden ? "hidden" : ""} 
+                onClick={toggle}>
+                  Credits
+              </Link>
             </li>
           </ul>
         </nav>
@@ -68,6 +92,7 @@ function App() {
   </div>
     
   );
+  }
 }
 
 export default App;
