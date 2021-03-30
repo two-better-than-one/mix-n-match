@@ -36,6 +36,13 @@ class App extends Component {
 
 
   render() {
+
+    var test = {
+      name: 'David Lam',
+      date: '12/20/2020',
+      score: 100000
+    }
+
     return(
       <div className="App">
 
@@ -69,7 +76,7 @@ class App extends Component {
               <ul className={this.state.isHidden ? 'hidden' : ''}>
                 <li className={this.state.isHidden ? 'hidden' : ''}>
                   <Link 
-                    to="/selectdifficulty"
+                    to="/leaderboard"
                     className={this.state.isHidden ? 'hidden' : ''}
                     onClick={this.handleClick}>
                     Leaderboard
@@ -77,7 +84,7 @@ class App extends Component {
                 </li>
                 <li className={this.state.isHidden ? 'hidden' : ''}>
                   <Link 
-                    to="/selectdifficulty"
+                    to="/credits"
                     className={this.state.isHidden ? 'hidden' : ''}
                     onClick={this.handleClick}>
                     Credits
