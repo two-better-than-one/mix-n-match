@@ -16,7 +16,8 @@
 
 .chart-container {
     display: flex;
-    margin: auto
+    margin: auto;
+    justify-content: center;
 }
 
 .chart {
